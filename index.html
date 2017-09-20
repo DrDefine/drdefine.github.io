@@ -3,12 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Firebase Cloud Messaging</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="//www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
-        <script type="text/javascript" src="/firebase_subscribe.js"></script>
+        <title>One Way</title>
+        <link rel="manifest" href="/manifest.json">
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+        <script>
+          var OneSignal = window.OneSignal || [];
+          OneSignal.push(["init", {
+            appId: "2210132f-6de6-4f32-88e3-8ce45872787f",
+            autoRegister: false,
+            notifyButton: {
+              enable: true /* Set to false to hide */
+            }
+          }]);
+        </script>
     </head>
     <body>
-        <button type="button" id="subscribe">subs</button>
+        hello suki
     </body>
 </html>
